@@ -3,8 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>AtlasResource.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Atlas.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LayerKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>507ADB5BAFE36C8F63CA336F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C10066A773A46741687A198</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EBBD6B29064933B666EE2812</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F00EA370EC2A09B90E8BEFB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
