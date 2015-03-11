@@ -19,6 +19,11 @@
 		0EF0C49A1AB05E7A003641AB /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4991AB05E7A003641AB /* UIColor+FlatColors.m */; };
 		0EF0C49D1AB05F15003641AB /* LBJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C49C1AB05F15003641AB /* LBJobViewController.m */; };
 		0EF0C4A11AB060FF003641AB /* LBWsipeableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4A01AB060FF003641AB /* LBWsipeableViewController.m */; };
+		0EF0C4A51AB06585003641AB /* LBUserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4A41AB06585003641AB /* LBUserImageView.m */; };
+		0EF0C4A91AB07168003641AB /* LBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4A81AB07168003641AB /* LBDataManager.m */; };
+		0EF0C4AD1AB07192003641AB /* LBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4AC1AB07192003641AB /* LBObject.m */; };
+		0EF0C4B01AB071A5003641AB /* LBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4AF1AB071A5003641AB /* LBUser.m */; };
+		0EF0C4B31AB073B5003641AB /* LBJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0C4B21AB073B5003641AB /* LBJob.m */; };
 		47AB6F294E037CA35DCD2E64 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 428216754318B5D8E0F2C122 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,17 @@
 		0EF0C49C1AB05F15003641AB /* LBJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBJobViewController.m; sourceTree = "<group>"; };
 		0EF0C49F1AB060FF003641AB /* LBWsipeableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBWsipeableViewController.h; sourceTree = "<group>"; };
 		0EF0C4A01AB060FF003641AB /* LBWsipeableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBWsipeableViewController.m; sourceTree = "<group>"; };
+		0EF0C4A31AB06585003641AB /* LBUserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUserImageView.h; sourceTree = "<group>"; };
+		0EF0C4A41AB06585003641AB /* LBUserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUserImageView.m; sourceTree = "<group>"; };
+		0EF0C4A61AB06CDC003641AB /* LBPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPrefixHeader.pch; sourceTree = "<group>"; };
+		0EF0C4A71AB07168003641AB /* LBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDataManager.h; sourceTree = "<group>"; };
+		0EF0C4A81AB07168003641AB /* LBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDataManager.m; sourceTree = "<group>"; };
+		0EF0C4AB1AB07192003641AB /* LBObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBObject.h; sourceTree = "<group>"; };
+		0EF0C4AC1AB07192003641AB /* LBObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBObject.m; sourceTree = "<group>"; };
+		0EF0C4AE1AB071A5003641AB /* LBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUser.h; sourceTree = "<group>"; };
+		0EF0C4AF1AB071A5003641AB /* LBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUser.m; sourceTree = "<group>"; };
+		0EF0C4B11AB073B5003641AB /* LBJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBJob.h; sourceTree = "<group>"; };
+		0EF0C4B21AB073B5003641AB /* LBJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBJob.m; sourceTree = "<group>"; };
 		428216754318B5D8E0F2C122 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D612BCABE3826F658A73174 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1627CB40BAC14B4E59CE86 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +141,7 @@
 			children = (
 				0EE224621AAB2A2E00D4A3E7 /* Info.plist */,
 				0EE224631AAB2A2E00D4A3E7 /* main.m */,
+				0EF0C4A61AB06CDC003641AB /* LBPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,6 +196,9 @@
 		0EF0C48E1AB05D44003641AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0EF0C4AA1AB07182003641AB /* LBObject */,
+				0EF0C4A71AB07168003641AB /* LBDataManager.h */,
+				0EF0C4A81AB07168003641AB /* LBDataManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +213,7 @@
 		0EF0C4901AB05D44003641AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0EF0C4A21AB06564003641AB /* ImageView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +234,28 @@
 				0EF0C4A01AB060FF003641AB /* LBWsipeableViewController.m */,
 			);
 			path = LBSwipeAbleView;
+			sourceTree = "<group>";
+		};
+		0EF0C4A21AB06564003641AB /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0C4A31AB06585003641AB /* LBUserImageView.h */,
+				0EF0C4A41AB06585003641AB /* LBUserImageView.m */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		0EF0C4AA1AB07182003641AB /* LBObject */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0C4AB1AB07192003641AB /* LBObject.h */,
+				0EF0C4AC1AB07192003641AB /* LBObject.m */,
+				0EF0C4AE1AB071A5003641AB /* LBUser.h */,
+				0EF0C4AF1AB071A5003641AB /* LBUser.m */,
+				0EF0C4B11AB073B5003641AB /* LBJob.h */,
+				0EF0C4B21AB073B5003641AB /* LBJob.m */,
+			);
+			path = LBObject;
 			sourceTree = "<group>";
 		};
 		665ED2883C71071BF6F4B69B /* Frameworks */ = {
@@ -367,12 +410,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF0C4AD1AB07192003641AB /* LBObject.m in Sources */,
 				0EF0C4931AB05D61003641AB /* LBJobFeedViewController.m in Sources */,
+				0EF0C4A91AB07168003641AB /* LBDataManager.m in Sources */,
 				0EE2246A1AAB2A2E00D4A3E7 /* ViewController.m in Sources */,
+				0EF0C4B01AB071A5003641AB /* LBUser.m in Sources */,
 				0EF0C49A1AB05E7A003641AB /* UIColor+FlatColors.m in Sources */,
+				0EF0C4B31AB073B5003641AB /* LBJob.m in Sources */,
 				0EF0C4961AB05D70003641AB /* LBViewController.m in Sources */,
 				0EE224671AAB2A2E00D4A3E7 /* AppDelegate.m in Sources */,
 				0EF0C49D1AB05F15003641AB /* LBJobViewController.m in Sources */,
+				0EF0C4A51AB06585003641AB /* LBUserImageView.m in Sources */,
 				0EE224641AAB2A2E00D4A3E7 /* main.m in Sources */,
 				0EF0C4A11AB060FF003641AB /* LBWsipeableViewController.m in Sources */,
 			);
@@ -497,6 +545,7 @@
 			baseConfigurationReference = 9D612BCABE3826F658A73174 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Loboro/LBPrefixHeader.pch;
 				INFOPLIST_FILE = Loboro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +557,7 @@
 			baseConfigurationReference = 9E1627CB40BAC14B4E59CE86 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Loboro/LBPrefixHeader.pch;
 				INFOPLIST_FILE = Loboro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

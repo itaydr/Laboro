@@ -8,8 +8,14 @@
 
 #import "LBJobViewController.h"
 #import "UIColor+FlatColors.h"
+#import "LBDataManager.h"
+#import "LBUserImageView.h"
+#import "LBJob.h"
 
 @interface LBJobViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet LBUserImageView *mainImageView;
 
 @property (nonatomic, strong) NSArray *colors;
 
@@ -18,9 +24,12 @@
 @implementation LBJobViewController
 
 - (void)postInit {
-    
-    [self setUpView];
     [self initColors];
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self setUpView];
 }
 
 - (void)setUpView {
@@ -37,7 +46,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    [self resetImages];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +61,16 @@
 - (void)postSetIndex {
     NSInteger colorIndex = self.index % self.colors.count;
     self.view.backgroundColor = [self colorForName:self.colors[colorIndex]];
+
+    LBJob *job = [LBDataManager createJobWithIndex:self.index];
+    self.subject = job;
+    
+    [self resetImages];
+}
+
+- (void)resetImages {
+    self.mainImageView.image = [UIImage imageNamed:[self.subject mainImageName]];
+    self.backgroundImageView.image = [UIImage imageNamed:[self.subject backgroundImageName]];
 }
 
 #pragma mark Colors

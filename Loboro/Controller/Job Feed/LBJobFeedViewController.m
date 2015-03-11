@@ -9,12 +9,12 @@
 #import <ZLSwipeableView.h>
 #import "LBJobFeedViewController.h"
 #import "LBJobViewController.h"
+#import "LBUserImageView.h"
 
 @interface LBJobFeedViewController () <ZLSwipeableViewDataSource, ZLSwipeableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet ZLSwipeableView *swipeableView;
 @property (nonatomic, assign)   NSInteger   indexOfView;
-//@property (nonatomic, strong)
 
 @end
 
@@ -55,8 +55,11 @@
 #pragma mark - ZLSwipeableViewDataSource
 
 - (UIView *)nextViewForSwipeableView:(ZLSwipeableView *)swipeableView {
-    LBJobViewController *jobVC = [[LBJobViewController alloc] init];
-    jobVC.index = self.indexOfView;
+    
+    NSString *identifier = NSStringFromClass([LBJobViewController class]);
+    LBJobViewController *jobVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:identifier];
+    
+    jobVC.index = 1;//self.indexOfView;
     jobVC.view.frame = self.swipeableView.bounds;
     self.indexOfView++;
     return jobVC.view;

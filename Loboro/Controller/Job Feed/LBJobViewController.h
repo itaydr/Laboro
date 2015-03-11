@@ -7,7 +7,10 @@
 //
 
 #import "LBWsipeableViewController.h"
+@class LBJob;
 
 @interface LBJobViewController : LBWsipeableViewController
+
+@property (nonatomic, strong)   LBJob       *subject;
 
 @end

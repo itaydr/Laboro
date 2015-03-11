@@ -1,5 +1,5 @@
 //
-//  LBViewController.h
+//  LBUserImageView.h
 //  Loboro
 //
 //  Created by Itay Dressler on 3/11/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface LBViewController : UIViewController
-
-- (BOOL)postInitWithCoderSetup;
-- (void)postInit;
+@interface LBUserImageView : UIImageView
 
 @end

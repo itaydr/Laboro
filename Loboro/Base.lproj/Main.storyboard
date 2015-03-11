@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xr9-t4-zIx" userLabel="swipe able view" customClass="ZLSwipeableView">
                                 <rect key="frame" x="56" y="60" width="488" height="500"/>
-                                <color key="backgroundColor" red="1" green="0.032138612859999999" blue="0.026130995510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,6 +37,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Job View Controller-->
+        <scene sceneID="xZh-rg-SxD">
+            <objects>
+                <viewController storyboardIdentifier="LBJobViewController" id="M6M-Dy-BFl" customClass="LBJobViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BiR-ms-5WI"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUy-9q-p2j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jlF-Ti-Stj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-Xs-eo7" userLabel="backgroundImage">
+                                <rect key="frame" x="16" y="20" width="568" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aKv-A0-cmo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e93-Ez-9Ka" userLabel="main pic" customClass="LBUserImageView">
+                                <rect key="frame" x="250" y="70" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e93-Ez-9Ka" secondAttribute="height" id="LtA-ty-v6O"/>
+                                    <constraint firstAttribute="height" constant="100" id="s6G-ua-cfz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S8B-Xs-eo7" firstAttribute="top" secondItem="BiR-ms-5WI" secondAttribute="bottom" id="5Fi-U1-OMC"/>
+                            <constraint firstItem="S8B-Xs-eo7" firstAttribute="centerY" secondItem="e93-Ez-9Ka" secondAttribute="centerY" id="5r0-Wa-nHz"/>
+                            <constraint firstItem="S8B-Xs-eo7" firstAttribute="centerX" secondItem="e93-Ez-9Ka" secondAttribute="centerX" id="iDR-Wi-lfB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S8B-Xs-eo7" secondAttribute="trailing" id="qKT-Ag-dbx"/>
+                            <constraint firstItem="S8B-Xs-eo7" firstAttribute="leading" secondItem="jlF-Ti-Stj" secondAttribute="leadingMargin" id="ysH-5f-rB5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="S8B-Xs-eo7" id="7iM-Xi-ZCE"/>
+                        <outlet property="mainImageView" destination="e93-Ez-9Ka" id="jSc-oo-tdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0B6-gx-KzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="286"/>
         </scene>
     </scenes>
 </document>
