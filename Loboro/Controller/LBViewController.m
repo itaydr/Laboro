@@ -14,6 +14,32 @@
 
 @implementation LBViewController
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        if (![self postInitWithCoderSetup]) {
+            [self postInit];
+        }
+    }
+    
+    return self;
+}
+
+- (instancetype)init {
+    if (self = [super init]) {
+        [self postInit];
+    }
+    
+    return self;
+}
+
+- (BOOL)postInitWithCoderSetup {
+    return NO;
+}
+
+- (void)postInit {
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -24,14 +50,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

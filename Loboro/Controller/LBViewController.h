@@ -10,4 +10,7 @@
 
 @interface LBViewController : UIViewController
 
+- (BOOL)postInitWithCoderSetup;
+- (void)postInit;
+
 @end

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ZLSwipeableView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C0B71726EBEB68634CEF097</key>
+		<key>025C3879B1DBD74512A4457B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4161F0BF80D4B11FD94093DE</key>
+		<key>57DB4E90D86A5805FDE0D55F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>662AFFD513922BA880A4D6B8</key>
+		<key>84B9591E6940E2B15FAA840C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7ADFDE5B05DFE57255DA1B3F</key>
+		<key>BE0D0240F335DE85FF7AF9FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9B3146CEB0DD7489B23D64C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
